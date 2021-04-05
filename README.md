@@ -6,7 +6,7 @@ This is a website I created for my Web Course, the subject is: 3rd generation we
 I chose my website to be about the president, Reuven Ruvi Rivlin.
 
 My Name:
-Mor Saranga
+Mor Lisa Saranga
 
 ID:
 205543606
