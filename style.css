@@ -88,7 +88,7 @@ ul#menu li a {
 	font-family: 'Lato', sans-serif;
 	font-weight: 360;
 	color: rgb(53, 68, 80);
-	padding: 2em;
+	padding: 1.5em;
 	text-decoration: none;
 	transition: all .5s;
 }
