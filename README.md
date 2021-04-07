@@ -1,5 +1,5 @@
-# assignment1-mor-sa
-assignment1-mor-sa created by GitHub Classroom
+# 205543606
+205543606 created by GitHub Classroom
 
 
 This is a website I created for my Web Course, the subject is: 3rd generation website.
@@ -12,4 +12,4 @@ ID:
 205543606
 
 Website URL:
-https://web-development-environments-2021.github.io/assignment1-mor-sa/
+https://web-development-environments-2021.github.io/205543606/
