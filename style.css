@@ -2,76 +2,93 @@
 html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
 	margin: 0;
 	padding: 0;
+	font-family: 'Inconsolata', monospace;
 }
 
-html, body { 
-	min-height: 100%; }
+h5{
+	text-align:center;
+	font-family: 'myFont', 'Inconsolata', monospace;
+	font-size: 32px;
+}
 
+h2 {
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  h2:before,
+  h2:after {
+	background-color: rgb(102, 136, 155);
+	content: "";
+	display: inline-block;
+	height: 3px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+	padding: 5px;
+  }
+  
+  h2:before {
+	right: 1em;
+	margin-left: -50%;
+  }
+  
+  h2:after {
+	left: 1em;
+	margin-right: -50%;
+  }
 
 body {
-	position: relative;
+	width: 100%;
 	margin: 0;
-	padding-top: 50px;
-	background-color: rgb(165, 200, 221);
-	background-image: linear-gradient(to bottom, rgba(76, 98, 124, 0.6), transparent);
+	top: 100px;
+	padding-top: 100px;
+	background-image: linear-gradient(to bottom , rgb(137, 168, 187),rgb(165, 200, 221));
 	color: #eee;
 	font-family: 'Lato', sans-serif;
-	font-size: 62.5%;
-	padding: 0 20px;
+	/* font-size: 62.5%; */
 	box-sizing: border-box;
-}
-code {
-	background: #fff1;
-	font-family: 'Inconsolata', monospace;
-	padding: .2em .4em;
+	text-align: center;
 }
 
-.content {
-	background-color: #fff;
-	border-radius: 8px;
-	box-sizing: border-box;
-	color: #666;
-	font-size: 1.6em;
-	line-height: 1.4em;
-	margin: 20px auto;
-	margin-top: 80px;
-	padding: 20px;
+
+section{
 	width: 100%;
-	/* max-width: 800px; */
-}
-.content ul {
-	margin: .5em 2em;
-	padding: 0;
+	text-align: center;
 }
 
-/* Appearance */
-#menu {
+#menu
+{
+	vertical-align: top;
 	position: fixed;
-	list-style-type: none;
-	margin: 0;
-    padding: 0;
+	top: 0;
 	width: 100%;
-    overflow: hidden;
-	background-color: transparent;
-	background-image: linear-gradient(to bottom, rgb(137, 168, 187), transparent);
-	border-bottom: 1px solid #0003;
+	height: 60px;
+	background-image: linear-gradient(to top , rgb(137, 168, 187),rgb(165, 200, 221));
 	box-shadow: 0 0 32px #0003;
-	font-size: 2em;
 	font-weight: 350;
-	position: fixed;
+	font-size: 1em;
+	z-index: 9999;
+
+} 
+
+ul#menu > li {
+    display: inline-block;
+    *display:inline;
+	padding: 0.3em 0.3em 0.3em 0.3em;	
 }
 
-ul#menu li{
-    display: inline;
+ul#bottom-menu > li {
+    display: inline-block;
+    *display:inline;
+	padding: 0.2em 0.2em 0.2em 0.2em;	
 }
 
 ul#menu li a {
-	display: inline;
+	font-family: 'Lato', sans-serif;
+	font-weight: 360;
 	color: rgb(53, 68, 80);
-	padding: 8px 16px;
-
-	/* padding: .75em; */
-	text-align: center;
+	padding: 2em;
 	text-decoration: none;
 	transition: all .5s;
 }
@@ -80,53 +97,192 @@ ul#menu li a:hover {
 	color: rgb(202, 234, 255);
 }
 
+form { 
+	margin: 0 auto; 
+	width:500px;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	}
 
-/* The Magic */
-#header {
-	position: fixed;
-	top: 0;
-	z-index: 999;
+	#submit-btn{
+		background-color: rgb(136, 157, 172);
+	}
+
+	input[type=text]{
+		width:50%;
+		resize: vertical;
+		padding:10px;
+		border-radius:15px;
+		border:0;
+		box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+		height:30px;
+		font-family: 'myFont', 'Inconsolata', monospace;
+
+	}
+
+	#containerText .emojionearea-editor {
+		min-height: 13em !important;
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		border-radius: 16px;	  }
+
+	textarea {
+		width:100%;
+		resize: vertical;
+		padding:15px;
+		border-radius:15px;
+		border:0;
+		box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+		height:150px;
+		font-family: 'myFont', 'Inconsolata', monospace;
+	  }
+
+	.submit-btn{
+		font-family: 'Inconsolata', monospace;
+		vertical-align: 0px;
+		padding: 1em;
+	}
+
+	input[type=submit]{
+		width:50%;
+		resize: vertical;
+		padding:10px;
+		border-radius:15px;
+		border:0;
+		box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+		font-family: 'myFont', 'Inconsolata', monospace;
+	}
+
+	*, *:before, *:after {
+		box-sizing: border-box;
+	  }
+
+	  ::-webkit-input-placeholder { 
+		font-family: 'myFont', 'Inconsolata', monospace;
+		color:rgb(155, 164, 170)
+	  }
+	  ::-moz-placeholder {
+		font-family: 'myFont', 'Inconsolata', monospace;
+		color:rgb(155, 164, 170)
+	  }
+	  :-ms-input-placeholder {
+		font-family: 'myFont', 'Inconsolata', monospace;
+		color:rgb(155, 164, 170)
+	  }
+	  :-moz-placeholder { 
+		font-family: 'myFont', 'Inconsolata', monospace;
+		color:rgb(155, 164, 170)
+	  }
+
+*{
+	box-sizing: border-box;
+  }
+
+  #bottom-menu{
+	background-color: rgb(96, 115, 138);
+	vertical-align: middle;
+  }
+  
+  /* Position the image container*/
+  .containerImg {
+	position:relative;
+	max-width:60%!important;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+	text-align: center;
 }
 
-
-ul#menu {
-	position: fixed;
-	top: 0;
-	display: grid;
-	grid-template-columns: repeat(var(--items), 1fr);
-	position: relative;
+.tweet-div{
+	position:relative;
+	max-width:80%!important;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
 }
-ul#menu .line {
-	opacity: 0;
-	transition: all .5s;
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prevImg,
+  .nextImg {
+	cursor: pointer;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
 	position: absolute;
-	bottom: 0;
-	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
-	/* width: var(--width, calc(100% / var(--items)));*/
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+
+  .prevImg{
+	left: 0px;
+  }
+  
+  /* Position the "next button" to the right */
+  .nextImg {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prevImg:hover,
+  .nextImg:hover {
+	background-color: rgb(102, 136, 155);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: rgb(102, 136, 155);
 	width: 100%;
-	top:0;
-	--index: 0;
-}
-ul#menu a:hover ~ .line {
+	padding-left: 4px;
+	padding-right: 4px;
+	padding: 1px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
 	opacity: 1;
-}
-
-ul#menu a:nth-of-type(1):hover ~ .line { --index: 1; }
-ul#menu a:nth-of-type(2):hover ~ .line { --index: 2; }
-ul#menu a:nth-of-type(3):hover ~ .line { --index: 3; }
-ul#menu a:nth-of-type(4):hover ~ .line { --index: 4; }
-ul#menu a:nth-of-type(5):hover ~ .line { --index: 5; }
-ul#menu a:nth-of-type(6):hover ~ .line { --index: 6; }
-ul#menu a:nth-of-type(7):hover ~ .line { --index: 7; }
-/* ul#menu a:nth-of-type(8):hover ~ .line { --index: 8; }
-ul#menu a:nth-of-type(9):hover ~ .line { --index: 9; }
-ul#menu a:nth-of-type(10):hover ~ .line { --index: 10; } */
-ul#menu a:last-of-type:hover ~ .line { --index: var(--items); }
-
-/* #about{
-	visibility: hidden;
-}
- 
-#about :focus{
-	visibility:visible;
-}  */
+  }
